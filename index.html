@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lentes</title>
+	</head>
+	<body>
+		<header>
+			<h1>Lentes</h1>
+		</header>
+		<main>
+			<canvas width="500" height="500" style="border: solid 1px black;"
+					id="myCanvas"></canvas>
+			<form>
+				<input type="checkbox" id="divergente" name="divergente">
+				<label for="divergente">Divergente</label>
+				<input type="checkbox" id="convergente" name="convergente">
+				<label for="Convergente">Convergente</label>
+				<br>
+				<h2> Angulo: </h2>
+				<input type="range" min="0" max="250" value="0" id="angulo">
+
+				<br>
+
+				<button type="button" id="submit">Gerar lente</button>
+			</form>
+		</main>
+		<script defer src="script.js"></script>
+	</body>
+</html> 
+
