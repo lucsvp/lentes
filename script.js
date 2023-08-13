@@ -23,13 +23,13 @@ gerarLenteButton.addEventListener("click", () => {
 		canvasContext.beginPath();
 		canvasContext.moveTo(0, canvasElement.height/4);
 		canvasContext.lineTo(canvasElement.width/2, 125);
-		canvasContext.lineTo(canvasElement.width, -25);
+		canvasContext.lineTo(canvasElement.width, -25-foco);
 		canvasContext.stroke();
 
 		canvasContext.beginPath();
 		canvasContext.moveTo(0, canvasElement.height*0.75);
 		canvasContext.lineTo(canvasElement.width/2, canvasElement.height*0.75);
-		canvasContext.lineTo(canvasElement.width, 525);
+		canvasContext.lineTo(canvasElement.width, 525-(-foco));
 		canvasContext.stroke();
 	}
 
@@ -39,13 +39,13 @@ gerarLenteButton.addEventListener("click", () => {
 		canvasContext.beginPath();
 		canvasContext.moveTo(0, canvasElement.height/4);
 		canvasContext.lineTo(canvasElement.width/2, canvasElement.height/4);
-		canvasContext.lineTo(canvasElement.width, canvasElement.width*0.35);
+		canvasContext.lineTo(canvasElement.width, (canvasElement.height*0.75)-(-foco));
 		canvasContext.stroke();
 
 		canvasContext.beginPath();
 		canvasContext.moveTo(0, canvasElement.height*0.75);
 		canvasContext.lineTo(canvasElement.width/2, canvasElement.height*0.75);
-		canvasContext.lineTo(canvasElement.width, canvasElement.width*0.275);
+		canvasContext.lineTo(canvasElement.width, (canvasElement.height*0.25)-foco);
 		canvasContext.stroke();
 
 	}
